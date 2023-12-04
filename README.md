@@ -4,8 +4,8 @@ In this repository is a list of 10 large Australian cities containing the city n
 
 ## Your task
 
-- Implement a simple web backend with a database.
-- Populate a database of your choice with the cities SQL.
+- Implement a simple web backend with a database of your choice.
+- Populate the database with the cities SQL.
 - Develop a method to find the shortest path between any two given cities. 
 - Expose the functionality to find the shortest route as a RESTful API, which accepts the name of two cities and return the list of cities based on the order of visit and the total distance covered in the process.
 
