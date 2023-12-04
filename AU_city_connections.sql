@@ -1,5 +1,5 @@
 CREATE TABLE cities (
-  city_id INT PRIMARY KEY AUTO_INCREMENT,
+  city_id INT PRIMARY KEY,
   city_name VARCHAR(50) NOT NULL
 );
 
@@ -11,17 +11,17 @@ CREATE TABLE connections (
   FOREIGN KEY (city_id2) REFERENCES cities(city_id)
 );
 
-INSERT INTO cities (city_name) VALUES
-('Sydney'),
-('Melbourne'),
-('Brisbane'),
-('Perth'),
-('Adelaide'),
-('Canberra'),
-('Hobart'),
-('Darwin'),
-('Cairns'),
-('Alice Springs');
+INSERT INTO cities (city_id, city_name) VALUES
+(1, 'Sydney'),
+(2, 'Melbourne'),
+(3, 'Brisbane'),
+(4, 'Perth'),
+(5, 'Adelaide'),
+(6, 'Canberra'),
+(7, 'Hobart'),
+(8, 'Darwin'),
+(9, 'Cairns'),
+(10, 'Alice Springs');
 
 INSERT INTO connections (city_id1, city_id2, distance) VALUES
 (1, 2, 870),
